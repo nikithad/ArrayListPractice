@@ -9,6 +9,7 @@ public class ArrayListGit{
 				list2.add((int)(Math.random()*10)+1);
 
 		System.out.println(combine(list1,list2));
+		newPrint(list1);
 
 	}
 	public static ArrayList<Integer> combine(ArrayList<Integer> num1, ArrayList<Integer> num2){
@@ -17,5 +18,11 @@ public class ArrayListGit{
 		list3.addAll(num1);
 		list3.addAll(num2);
 		return list3;
+	}
+	public static void newPrint(ArrayList<Integer> num){
+		for (int i = 0; i < num.size(); i++){
+			System.out.print(num.get(i) + ", ");
+		}
+
 	}
 }
